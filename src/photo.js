@@ -1,5 +1,3 @@
-'use strict';
-
 class Photo {
 	constructor(photo) {
 		this.url = photo.url;
@@ -15,4 +13,4 @@ class Photo {
 	}
 }
 
-module.exports = Photo;
+export default Photo;

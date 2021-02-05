@@ -1,6 +1,4 @@
-'use strict';
-
-const User = require('./user');
+import User from './user.js';
 
 class DirectMessage {
 	constructor(dm) {
@@ -19,4 +17,4 @@ class DirectMessage {
 	}
 }
 
-module.exports = DirectMessage;
+export default DirectMessage;

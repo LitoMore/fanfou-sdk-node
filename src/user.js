@@ -1,5 +1,3 @@
-'use strict';
-
 class User {
 	constructor(user) {
 		this.id = user.id;
@@ -47,4 +45,4 @@ class User {
 	}
 }
 
-module.exports = User;
+export default User;

@@ -2,7 +2,11 @@
   "name": "fanfou-sdk",
   "version": "4.2.0",
   "description": "Fanfou SDK for Node.js",
-  "main": "src/index.js",
+  "type": "module",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=12"
+  },
   "dependencies": {
     "form-data": "^3.0.0",
     "got": "^10.2.0",
@@ -13,10 +17,7 @@
   },
   "devDependencies": {
     "ava": "^3.0.0",
-    "xo": "^0.35.0"
-  },
-  "engines": {
-    "node": ">=10"
+    "xo": "^0.37.1"
   },
   "scripts": {
     "test": "xo"

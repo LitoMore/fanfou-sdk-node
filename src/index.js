@@ -1,15 +1,12 @@
-'use strict';
-
-const got = require('got');
-const hmacsha1 = require('hmacsha1');
-const oauth = require('oauth-1.0a');
-const queryString = require('query-string');
-const FormData = require('form-data');
-
-const User = require('./user');
-const Status = require('./status');
-const DirectMessage = require('./direct-message');
-const FanfouError = require('./ff-error');
+import got from 'got';
+import hmacsha1 from 'hmacsha1';
+import oauth from 'oauth-1.0a';
+import queryString from 'query-string';
+import FormData from 'form-data';
+import User from './user.js';
+import Status from './status.js';
+import DirectMessage from './direct-message.js';
+import FanfouError from './ff-error.js';
 
 class Fanfou {
 	constructor(opt = {}) {
@@ -259,4 +256,4 @@ class Fanfou {
 	}
 }
 
-module.exports = Fanfou;
+export default Fanfou;

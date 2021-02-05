@@ -1,8 +1,6 @@
-'use strict';
-
-const he = require('he');
-const User = require('./user');
-const Photo = require('./photo');
+import he from 'he';
+import User from './user.js';
+import Photo from './photo.js';
 
 class Status {
 	constructor(status) {
@@ -262,4 +260,4 @@ class Status {
 	}
 }
 
-module.exports = Status;
+export default Status;

@@ -1,5 +1,3 @@
-'use strict';
-
 class FanfouError extends Error {
 	constructor(error) {
 		super();
@@ -48,5 +46,5 @@ class FanfouError extends Error {
 	}
 }
 
-module.exports = FanfouError;
+export default FanfouError;
 
